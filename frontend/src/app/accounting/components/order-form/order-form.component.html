@@ -1,0 +1,7 @@
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+  <label class="label paragraph">Voller Name</label>
+  <input formControlName="name" type="text" fullWidth status="basic" nbInput placeholder="Voller Name" autofocus>
+  <label class="label paragraph">Telefon</label>
+  <input formControlName="phone" type="text" fullWidth status="basic" nbInput placeholder="Telefonnummer">
+  <button fullWidth nbButton [disabled]="!profileForm.valid">Anlegen</button>
+</form>
